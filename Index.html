@@ -57,6 +57,30 @@
 
 <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
+
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBUi05h6AW2ZjW0f2u1tGqrgUAg6yRLvLs",
+    authDomain: "show-me-the-leads-blog-87279.firebaseapp.com",
+    databaseURL: "https://show-me-the-leads-blog-87279.firebaseio.com/contatos",
+    projectId: "show-me-the-leads-blog-87279",
+    storageBucket: "",
+    messagingSenderId: "185684396743"
+  };
+  firebase.initializeApp(config);
+  var b = firebase.database().ref("messages");
+            $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
+            var c = $("#name").val(),
+                d = $("#email").val(),
+                f = $('#empresa').val(),
+                g = { name: c, email: d,empresa: f};
+            return b.push(f).then(function(a) { 
+                $(".sucess").css("display", "block"), 
+                $(".sucess-none").css("display", "none") }), !1 })  
+</script>
+
 </head>
 <body>
     <div id="area-cabecalho">
@@ -114,3 +138,5 @@
 
 </body>
 </html>
+
+

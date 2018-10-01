@@ -1,6 +1,7 @@
 body {
     font-size: 1em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif;
+    font-family: Montserrat;
+    src: url('fonts/Montserrat-Black.ttf');
     background: #e6e6e6;
 }
 
@@ -121,7 +122,6 @@ img {
   
   .form-contact {
     width: 100%;
-    font-family: "Arial", Times, serif;
   }
   
   .form-contact-input {
@@ -157,7 +157,7 @@ img {
     padding-top: 16px;
     padding-left: 0;
     padding-right: 0;
-    font-family: "Arial", Times, serif;
+   
   }
   
   .form-contact-button {
