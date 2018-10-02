@@ -1,13 +1,5 @@
 //~ Waypoint
 
- $(".form-lateral--content").waypoint(() => {
- $(".form-lateral--content").addClass("animated zoomIn");
-}, { offset: '95%' });
-
-$(".main-content").waypoint(() => {
-    $(".main-content").addClass("animated zoomIn");
-   }, { offset: '95%' });
-
    $(".img-2").waypoint(() => {
     $(".img-2").addClass("animated fadeInLeftBig");
    }, { offset: '95%' });

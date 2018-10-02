@@ -8,8 +8,6 @@
  * Copyright (c) 2018 Daniel Eden
  */
 
- .form-lateral--content,
- .main-content,
  .img-2,
  .img-3,
  .img-4,
@@ -129,16 +127,19 @@
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+    opacity: 1;
   }
 
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05);
+    opacity: 1;
   }
 
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+    opacity: 1;
   }
 }
 
@@ -146,16 +147,19 @@
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+    opacity: 1;
   }
 
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05);
+    opacity: 1;
   }
 
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+    opacity: 1;
   }
 }
 
