@@ -1,142 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt-br">
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aprenda agora como transmitir
-            vídeos ao vivo e online</title>
+    <title>Aprenda agora como transmitir vídeos ao vivo e online</title>
+    <link rel="stylesheet" href="style.css">
 
-<style type="text/css" rel="stylesheet">
-        html, body, div, span, applet, object, iframe,
-        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-        a, abbr, acronym, address, big, cite, code,
-        del, dfn, em, img, ins, kbd, q, s, samp,
-        small, strike, strong, sub, sup, tt, var,
-        b, u, i, center,
-        dl, dt, dd, ol, ul, li,
-        fieldset, form, label, legend,
-        table, caption, tbody, tfoot, thead, tr, th, td,
-        article, aside, canvas, details, embed,
-        figure, figcaption, footer, header, hgroup,
-        menu, nav, output, ruby, section, summary,
-        time, mark, audio, video {
-          margin: 0;
-          padding: 0;
-          border: 0;
-          font-size: 100%;
-          font: inherit;
-          vertical-align: baseline;
-        }
-        article, aside, details, figcaption, figure,
-        footer, header, hgroup, menu, nav, section {
-          display: block;
-        }
-        body {
-          line-height: 1;
-        }
-        ol, ul {
-          list-style: none;
-        }
-        blockquote, q {
-          quotes: none;
-        }
-        blockquote:before, blockquote:after,
-        q:before, q:after {
-          content: '';
-          content: none;
-        }
-        table {
-          border-collapse: collapse;
-          border-spacing: 0;
-        }
-        b, strong {
-          font-weight: bold;
-        }
-</style>
+  </head>
 
-<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <body>
 
-
-<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBUi05h6AW2ZjW0f2u1tGqrgUAg6yRLvLs",
-    authDomain: "show-me-the-leads-blog-87279.firebaseapp.com",
-    databaseURL: "https://show-me-the-leads-blog-87279.firebaseio.com/contatos",
-    projectId: "show-me-the-leads-blog-87279",
-    storageBucket: "",
-    messagingSenderId: "185684396743"
-  };
-  firebase.initializeApp(config);
-  var b = firebase.database().ref("messages");
-            $("#newContact").submit(function(a) { $(this), console.log("Submit to Firebase");
-            var c = $("#name").val(),
-                d = $("#email").val(),
-                f = $('#empresa').val(),
-                g = { name: c, email: d,empresa: f};
-            return b.push(f).then(function(a) { 
-                $(".sucess").css("display", "block"), 
-                $(".sucess-none").css("display", "none") }), !1 })  
-</script>
-
-</head>
-<body>
-    <div id="area-cabecalho">
-        <div id="area-logo">
-            <h1>MyLiveOnline</h1> 
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="area-logo">
+            <h1><img class="logo" src="img/myliveonline-logo.png" alt="Logo do MyLiveOnline">
+            <span class="alt-logo">MyLiveOnline</span>
+        </h1>
+          </div>
         </div>
+      </div>
+    </header>
 
-    </div>
+    <main class="main">
+      <div class="container">
+        <section class="main-content">
+          <div class="col-3">
+            <img src="https://via.placeholder.com/300x300/8a00e2/ffffff" alt="Imagem do post">
+          </div>
+          <div class="col-3">
+            <div class="highlight-post">
+              <h2>Aprenda agora como transmitir vídeos ao vivo e online.</h2>
+              <small class="metadata">postado em...</small>
 
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, obcaecati placeat quos enim repudiandae sunt aspernatur voluptates, nisi similique commodi consequuntur cumque, harum eius provident neque illum! Alias, minus, deleniti?</p>
 
-    <div id="area-principal">
-        <div id="area-postagens">
-            <div class="postagem">
-                <h2>Titulo da postagem 1</h2>
-                    <span class="data-postagem">postado em ..</span>
-                    <img width= "300px" src="img/Facebook-Live.jpg">
-                    <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet, risus eget aliquam pellentesque, libero elit pellentesque nunc, eu fermentum nisi nibh vitae felis. Nullam id eros ligula. Quisque faucibus magna quis lectus mattis, at euismod augue convallis. Vestibulum rhoncus tellus quis sem ullamcorper mattis eu sodales nisl. 
-                            </p>
-                    </div>
-                    <a href="">Leia mais...</a>
-        
+              <a href="#">Leia mais...</a>
+
             </div>
-        
-            <div class="postagem">
-                <h2>Titulo da postagem 2</h2>
-                    <span class="data-postagem">postado em ..</span>
-                    
-                    <img width= "300px"  src="img/Facebook-Live.jpg">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet, risus eget aliquam pellentesque, libero elit pellentesque nunc, eu fermentum nisi nibh vitae felis. Nullam id eros ligula. Quisque faucibus magna quis lectus mattis, at euismod augue convallis. Vestibulum rhoncus tellus quis sem ullamcorper mattis eu sodales nisl. 
-                        </p>
-                    </div>
-                    
-                    <a href="">Leia mais...</a>
-        
-            </div>
-        
-            </div>
-                <div id="area-lateral">
-                    <h3>Preencha os campos abaixo para obter gratuitamente o material</h3>
-                    <div class="conteudo-lateral">
-                        <div class="postagem-lateral">
-                            <form action="#" class="form-contact" method="post" tabindex="1">  
-                                <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required />  
-                                <input type="email" class="form-contact-input" name="email" placeholder="Email Coporativo" required />  
-                                <input type="text" class="form-contact-input" name="empresa" placeholder="Empresa" />   
-                                <button type="submit" class="form-contact-button">Receber material</button>  
-                            </form>  
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-3">
+            <div class="form-lateral">
+              <div class="form-lateral--header">
+                <h4>Preencha os campos abaixo para obter gratuitamente o material</h4>
+              </div>
 
-     </div>
+              <div class="form-lateral--content">
+                <form action="#" class="contact-form" method="post" tabindex="1">
+                  <fieldset>
+                    <label for="nome">Nome*</label>
+                    <input id="nome" type="text" class="contat-form--input" name="nome" placeholder="Nome" required />
+                  </fieldset>
+                  <fieldset>
+                    <label for="email">E-mail Corporativo*</label>
+                    <input id="email" type="email" class="contat-form--input" name="email" placeholder="Email Coporativo" required />
+                  </fieldset>
+                  <fieldset>
+                    <label for="empresa">Empresa*</label>
+                    <input id="empresa" type="text" class="contat-form--input" name="empresa" placeholder="Empresa" />
+                  </fieldset>
+                  <button type="submit" class="contact-form--button">Receber material</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
 
-</body>
+        <section class="posts">
+
+
+            <div class="post">
+              <a href="#">
+                <img src="https://via.placeholder.com/640x360/8a00e2/ffffff" alt="Imagem do post">
+                <h3>Titulo da postagem 2</h3>
+                <p class="metadata">Por Fulano de tal | 28 de setembro</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum optio odio quaerat, expedita consectetur, adipisci magnam. Tenetur sapiente expedita autem voluptatem vitae, nesciunt reprehenderit doloribus a deserunt illo iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, laboriosam!</p>
+                <span href="#">Leia mais...</span>
+              </a>
+            </div>
+
+            <div class="post">
+              <a href="#">
+                <img src="https://via.placeholder.com/640x360/8a00e2/ffffff" alt="Imagem do post">
+                <h3>Titulo da postagem 3</h3>
+                <p class="metadata">Por Fulano de tal | 28 de setembro</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, labore cumque eius quam consequatur dolorem omnis eum! Iure debitis sit eveniet unde porro minus dolores, expedita quibusdam! Incidunt, et! Fugiat.</p>
+                <span href="#">Leia mais...</span>
+              </a>
+            </div>
+
+
+            <div class="post">
+              <a href="#">
+                <img src="https://via.placeholder.com/640x360/8a00e2/ffffff" alt="Imagem do post">
+                <h3>Titulo da postagem 2</h3>
+                <p class="metadata">Por Fulano de tal | 28 de setembro</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum optio odio quaerat, expedita consectetur, adipisci magnam. Tenetur sapiente expedita autem voluptatem vitae, nesciunt reprehenderit doloribus a deserunt illo iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, laboriosam!</p>
+                <span href="#">Leia mais...</span>
+              </a>
+            </div>
+
+            <div class="post">
+              <a href="#">
+                <img src="https://via.placeholder.com/640x360/8a00e2/ffffff" alt="Imagem do post">
+                <h3>Titulo da postagem 3</h3>
+                <p class="metadata">Por Fulano de tal | 28 de setembro</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, labore cumque eius quam consequatur dolorem omnis eum! Iure debitis sit eveniet unde porro minus dolores, expedita quibusdam! Incidunt, et! Fugiat.</p>
+                <span href="#">Leia mais...</span>
+              </a>
+            </div>
+
+            <div class="post">
+              <a href="#">
+                <img src="https://via.placeholder.com/640x360/8a00e2/ffffff" alt="Imagem do post">
+                <h3>Titulo da postagem 2</h3>
+                <p class="metadata">Por Fulano de tal | 28 de setembro</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum optio odio quaerat, expedita consectetur, adipisci magnam. Tenetur sapiente expedita autem voluptatem vitae, nesciunt reprehenderit doloribus a deserunt illo iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, laboriosam!</p>
+                <span href="#">Leia mais...</span>
+              </a>
+            </div>
+
+            <div class="post">
+              <a href="#">
+                <img src="https://via.placeholder.com/640x360/8a00e2/ffffff" alt="Imagem do post">
+                <h3>Titulo da postagem 3</h3>
+                <p class="metadata">Por Fulano de tal | 28 de setembro</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, labore cumque eius quam consequatur dolorem omnis eum! Iure debitis sit eveniet unde porro minus dolores, expedita quibusdam! Incidunt, et! Fugiat.</p>
+                <span href="#">Leia mais...</span>
+              </a>
+            </div>
+        </section>
+
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img class="logo" src="img/myliveonline-logo@0,25x.png" alt="Logo do MyLiveOnline">
+
+        <div class="footer--social">
+          <a href="" title="Curta nossa página do Facebook"><img src="img/facebook-icon.png" alt="Ícone do Facebook"></a>
+          <a href="" title="Nos siga no Twitter"><img src="img/twitter-icon.png" alt="Ícone do Twitter"></a>
+          <a href="" title="Nos siga no LinkedIn"><img src="img/linkedin-icon.png" alt="Ícone do LinkedIn"></a>
+          <a href="" title="Nos siga no Instagram"><img src="img/instagram-icon.png" alt="Ícone do Instagram"></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/3.0.2/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script>
+    $.fn.getFormData = function() {
+      var fields = this.find('[name]');
+      var result = {};
+      $.each(fields, function (i, el) {
+        result[el.name] = el.value;
+      });
+      return result;
+    };
+      var config = {
+        apiKey: "AIzaSyBUi05h6AW2ZjW0f2u1tGqrgUAg6yRLvLs",
+        authDomain: "show-me-the-leads-blog-87279.firebaseapp.com",
+        databaseURL: "https://show-me-the-leads-blog-87279.firebaseio.com/contatos",
+        projectId: "show-me-the-leads-blog-87279",
+        storageBucket: "",
+        messagingSenderId: "185684396743"
+      };
+      var fb = firebase.initializeApp(config);
+      var user_id;
+      $('.submit').on('click', function (e) {
+        e.preventDefault();
+        var updates = {};
+        user_id = user_id ? user_id : fb.database().ref().child('user-data').push().key;
+        updates[user_id] = $('form').getFormData();
+        fb.database().ref().child('user-data').update(updates);
+      });
+    </script>
+
+  </body>
+
 </html>
-
-
