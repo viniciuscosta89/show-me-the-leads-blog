@@ -98,6 +98,7 @@ body {
 
 .header-content .logo {
   margin: auto;
+  height: 8rem;
 }
 
 .alt-logo {
@@ -177,7 +178,7 @@ p {
 }
 
 .highlight-post p {
-  margin-bottom: 2rem;
+  font-size: 1rem;
 }
 
 .highlight-post a {
@@ -342,6 +343,8 @@ p {
 
 .post p {
   line-height: 1.5;
+  font-size: 0.8rem;
+  text-align: justify;
 }
 
 .post span {
