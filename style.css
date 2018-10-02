@@ -93,6 +93,7 @@ body {
   margin-bottom: 3rem;
   padding: 2rem;
   text-align: center;
+  border-bottom: 0.2rem solid black;
 }
 
 .header-content .logo {
