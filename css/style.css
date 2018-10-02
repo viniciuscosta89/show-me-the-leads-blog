@@ -400,12 +400,6 @@ p {
   align-items: center;
 }
 
-.p-footer {
-  line-height: 1.3;
-  font-size: 0.8rem;
-  color: #000;
-}
-
 .footer--social > a {
   border-radius: 1rem;
   display: inline-flex;
