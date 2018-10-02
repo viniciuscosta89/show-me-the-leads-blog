@@ -7,11 +7,12 @@
 @font-face {
   font-family: "Montserrat";
   src: url("fonts/montserrat-bold-webfont.eot");
-  src: url("fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"),
-  url("fonts/montserrat-bold-webfont.woff2") format("woff2"),
-  url("fonts/montserrat-bold-webfont.woff") format("woff"),
-  url("fonts/montserrat-bold-webfont.ttf") format("truetype"),
-  url("fonts/montserrat-bold-webfont.svg#montserratbold") format("svg");
+  src: url("fonts/montserrat-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/montserrat-bold-webfont.woff2") format("woff2"),
+    url("fonts/montserrat-bold-webfont.woff") format("woff"),
+    url("fonts/montserrat-bold-webfont.ttf") format("truetype"),
+    url("fonts/montserrat-bold-webfont.svg#montserratbold") format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -19,11 +20,13 @@
 @font-face {
   font-family: "Montserrat";
   src: url("fonts/montserrat-bolditalic-webfont.eot");
-  src: url("fonts/montserrat-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),
-  url("fonts/montserrat-bolditalic-webfont.woff2") format("woff2"),
-  url("fonts/montserrat-bolditalic-webfont.woff") format("woff"),
-  url("fonts/montserrat-bolditalic-webfont.ttf") format("truetype"),
-  url("fonts/montserrat-bolditalic-webfont.svg#montserratbold_italic") format("svg");
+  src: url("fonts/montserrat-bolditalic-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/montserrat-bolditalic-webfont.woff2") format("woff2"),
+    url("fonts/montserrat-bolditalic-webfont.woff") format("woff"),
+    url("fonts/montserrat-bolditalic-webfont.ttf") format("truetype"),
+    url("fonts/montserrat-bolditalic-webfont.svg#montserratbold_italic")
+      format("svg");
   font-weight: 700;
   font-style: italic;
 }
@@ -31,11 +34,12 @@
 @font-face {
   font-family: "Montserrat";
   src: url("fonts/montserrat-italic-webfont.eot");
-  src: url("fonts/montserrat-italic-webfont.eot?#iefix") format("embedded-opentype"),
-  url("fonts/montserrat-italic-webfont.woff2") format("woff2"),
-  url("fonts/montserrat-italic-webfont.woff") format("woff"),
-  url("fonts/montserrat-italic-webfont.ttf") format("truetype"),
-  url("fonts/montserrat-italic-webfont.svg#montserratitalic") format("svg");
+  src: url("fonts/montserrat-italic-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/montserrat-italic-webfont.woff2") format("woff2"),
+    url("fonts/montserrat-italic-webfont.woff") format("woff"),
+    url("fonts/montserrat-italic-webfont.ttf") format("truetype"),
+    url("fonts/montserrat-italic-webfont.svg#montserratitalic") format("svg");
   font-weight: normal;
   font-style: italic;
 }
@@ -43,11 +47,12 @@
 @font-face {
   font-family: "Montserrat";
   src: url("fonts/montserrat-regular-webfont.eot");
-  src: url("fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"),
-  url("fonts/montserrat-regular-webfont.woff2") format("woff2"),
-  url("fonts/montserrat-regular-webfont.woff") format("woff"),
-  url("fonts/montserrat-regular-webfont.ttf") format("truetype"),
-  url("fonts/montserrat-regular-webfont.svg#montserratregular") format("svg");
+  src: url("fonts/montserrat-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/montserrat-regular-webfont.woff2") format("woff2"),
+    url("fonts/montserrat-regular-webfont.woff") format("woff"),
+    url("fonts/montserrat-regular-webfont.ttf") format("truetype"),
+    url("fonts/montserrat-regular-webfont.svg#montserratregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -55,11 +60,13 @@
 @font-face {
   font-family: "Montserrat";
   src: url("fonts/montserrat-semibold-webfont.eot");
-  src: url("fonts/montserrat-semibold-webfont.eot?#iefix") format("embedded-opentype"),
-  url("fonts/montserrat-semibold-webfont.woff2") format("woff2"),
-  url("fonts/montserrat-semibold-webfont.woff") format("woff"),
-  url("fonts/montserrat-semibold-webfont.ttf") format("truetype"),
-  url("fonts/montserrat-semibold-webfont.svg#montserratsemibold") format("svg");
+  src: url("fonts/montserrat-semibold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/montserrat-semibold-webfont.woff2") format("woff2"),
+    url("fonts/montserrat-semibold-webfont.woff") format("woff"),
+    url("fonts/montserrat-semibold-webfont.ttf") format("truetype"),
+    url("fonts/montserrat-semibold-webfont.svg#montserratsemibold")
+      format("svg");
   font-weight: 600;
   font-style: normal;
 }
@@ -67,11 +74,13 @@
 @font-face {
   font-family: "Montserrat";
   src: url("fonts/montserrat-semibolditalic-webfont.eot");
-  src: url("fonts/montserrat-semibolditalic-webfont.eot?#iefix") format("embedded-opentype"),
-  url("fonts/montserrat-semibolditalic-webfont.woff2") format("woff2"),
-  url("fonts/montserrat-semibolditalic-webfont.woff") format("woff"),
-  url("fonts/montserrat-semibolditalic-webfont.ttf") format("truetype"),
-  url("fonts/montserrat-semibolditalic-webfont.svg#montserratsemibold_italic") format("svg");
+  src: url("fonts/montserrat-semibolditalic-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/montserrat-semibolditalic-webfont.woff2") format("woff2"),
+    url("fonts/montserrat-semibolditalic-webfont.woff") format("woff"),
+    url("fonts/montserrat-semibolditalic-webfont.ttf") format("truetype"),
+    url("fonts/montserrat-semibolditalic-webfont.svg#montserratsemibold_italic")
+      format("svg");
   font-weight: 600;
   font-style: italic;
 }
@@ -105,7 +114,8 @@ body {
   display: none;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
 }
 
@@ -250,7 +260,6 @@ p {
 }
 
 /* FIM FORM */
-
 
 /* AREA DESTAQUE */
 .area-destaque {
@@ -401,7 +410,8 @@ p {
     align-items: normal;
   }
 
-  .col-3, .post {
+  .col-3,
+  .post {
     max-width: calc(97% / 2);
   }
 
@@ -429,7 +439,8 @@ p {
     align-items: normal;
   }
 
-  .col-3, .post {
+  .col-3,
+  .post {
     max-width: calc(96% / 3);
   }
 
@@ -476,4 +487,8 @@ p {
   .footer--social > a:hover {
     background-color: #8a00e2;
   }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Retina-specific stuff here */
 }
