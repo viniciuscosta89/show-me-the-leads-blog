@@ -269,6 +269,7 @@ p {
 .area-destaque--texto > p {
   line-height: 1.3;
   margin-bottom: 2rem;
+  font-size: 1rem;
 }
 
 .area-destaque--texto > .metadata {
@@ -301,6 +302,7 @@ p {
 .area-conteudo p {
   line-height: 1.5;
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 /* FIM AREA CONTEUDO */
