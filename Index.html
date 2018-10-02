@@ -16,9 +16,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MyLiveOnline</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="animate.css">
-  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
 </head>
 
@@ -172,8 +172,12 @@
       <img class="logo" src="img/myliveonline-logo.png" alt="Logo do MyLiveOnline">
 
       <div class="footer--social">
+<<<<<<< HEAD
         <a href="https://www.facebook.com/myliveonline.oficial" title="Curta nossa página do Facebook" target="_blank"><img
             src="img/facebook-icon.png" alt="Ícone do Facebook"></a>
+=======
+        <a href="https://www.facebook.com/myliveonline.oficial" title="Curta nossa página do Facebook" target="_blank"><img src="img/facebook-icon.png" alt="Ícone do Facebook"></a>
+>>>>>>> 8288dd46817ca7da6963b648a14b1184486bf00f
         <a href="" title="Nos siga no Twitter" target="_blank"><img src="img/twitter-icon.png" alt="Ícone do Twitter"></a>
         <a href="" title="Nos siga no LinkedIn" target="_blank"><img src="img/linkedin-icon.png" alt="Ícone do LinkedIn"></a>
         <a href="https://www.instagram.com/myliveonline/" title="Nos siga no Instagram" target="_blank"><img src="img/instagram-icon.png"
@@ -186,10 +190,12 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-  <script src="plugins.js"></script>
-  <script src="main.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.0.2/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/real-time-database.js"></script>
 
   <script>
     $.fn.getFormData = function () {
@@ -200,23 +206,6 @@
       });
       return result;
     };
-    var config = {
-      apiKey: "AIzaSyBUi05h6AW2ZjW0f2u1tGqrgUAg6yRLvLs",
-      authDomain: "show-me-the-leads-blog-87279.firebaseapp.com",
-      databaseURL: "https://show-me-the-leads-blog-87279.firebaseio.com/contatos",
-      projectId: "show-me-the-leads-blog-87279",
-      storageBucket: "",
-      messagingSenderId: "185684396743"
-    };
-    var fb = firebase.initializeApp(config);
-    var user_id;
-    $('.submit').on('click', function (e) {
-      e.preventDefault();
-      var updates = {};
-      user_id = user_id ? user_id : fb.database().ref().child('user-data').push().key;
-      updates[user_id] = $('form').getFormData();
-      fb.database().ref().child('user-data').update(updates);
-    });
   </script>
 
 </body>

@@ -86,23 +86,24 @@
 }
 
 body {
-  font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
 }
 
 .container {
-  max-width: 128rem;
+  max-width: 80rem;
   margin: auto;
+}
+
+.header {
+  border-bottom: 0.2rem solid black;
 }
 
 .header-content {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
   padding: 2rem;
   text-align: center;
-  border-bottom: 0.2rem solid black;
 }
 
 .header-content .logo {
@@ -155,7 +156,7 @@ img {
 /* MAIN */
 
 .main-content {
-  padding: 2rem;
+  padding: 2rem 1.25rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -189,6 +190,7 @@ p {
 
 .highlight-post p {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .highlight-post a {
@@ -205,13 +207,13 @@ p {
 .form-lateral--header {
   background-color: #8a00e2;
   color: #fff;
-  padding: 1rem;
+  padding: 1.25rem;
   text-align: center;
 }
 
 .form-lateral--content {
   background-color: #e7e7e7;
-  padding: 2rem;
+  padding: 1.25rem;
 }
 
 .contact-form fieldset {
@@ -267,6 +269,7 @@ p {
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 4rem;
+  padding: 2rem 1.25rem;
 }
 
 .area-destaque--texto {
@@ -289,7 +292,7 @@ p {
 
 /* AREA CONTEUDO */
 .area-conteudo {
-  max-width: 96rem;
+  max-width: 60rem;
   margin: auto;
 }
 
@@ -322,7 +325,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 2rem 1.25rem;
 }
 
 .post {
@@ -374,14 +377,12 @@ p {
 /* FOOTER */
 
 .footer {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1.2rem;
 }
 
 .footer .logo {
   margin: 0 auto 2rem;
-  height: 8rem;
+  height: 4rem;
 }
 
 .footer--social {
@@ -490,5 +491,7 @@ p {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* Retina-specific stuff here */
+  body {
+    font-size: 62.5%;
+  }
 }
