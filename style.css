@@ -228,7 +228,7 @@ p {
   background-color: #8a00e2;
   border: none;
   border-radius: 0.8rem;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
   display: block;
   font-family: "Montserrat", sans-serif;
@@ -244,6 +244,8 @@ p {
 
 .contact-form--button:hover {
   opacity: 1;
+  background-color: #fff;
+  color: #8a00e2;
 }
 
 /* FIM FORM */
@@ -347,6 +349,10 @@ p {
   color: #8a00e2;
   font-weight: 600;
   padding: 1rem 0;
+}
+
+.span-post {
+  font-size: 1rem;
 }
 
 /* FIM POSTS HOME */
