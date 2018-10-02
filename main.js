@@ -23,3 +23,8 @@
    $(".img-7").waypoint(() => {
     $(".img-7").addClass("animated fadeInRightBig");
    }, { offset: '95%' });
+
+   $(".post p").waypoint(() => {
+    $(".post p").addClass("animated zoomIn");
+   }, { offset: '95%' });
+   
