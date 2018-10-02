@@ -285,7 +285,7 @@ p {
 }
 
 .area-destaque--texto > .metadata {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
 }
 
 /* FIM AREA DESTAQUE */
@@ -338,6 +338,7 @@ p {
 
 .post .metadata {
   display: inline-block;
+  font-size: 0.9rem;
   margin-bottom: 2rem;
 }
 
@@ -357,7 +358,7 @@ p {
 
 .post p {
   line-height: 1.5;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: justify;
 }
 
