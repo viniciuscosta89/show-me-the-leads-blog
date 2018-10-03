@@ -289,6 +289,7 @@ p {
   line-height: 1.5;
   margin-bottom: 2rem;
   font-size: 1rem;
+  text-align: justify;
 }
 
 .area-destaque--texto > .metadata {
@@ -501,13 +502,17 @@ p {
   }
 
   .area-destaque--img {
-    align-self: flex-start;
+    /*align-self: flex-start; */
     max-width: calc(50% - 10px);
   }
 
   .footer--social > a:hover {
     background-color: #8a00e2;
   }
+}
+
+.p-post3 {
+  padding-top: 3.7rem;
 }
 
 /* @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
