@@ -511,6 +511,10 @@ p {
   }
 }
 
+.p-post3 {
+  padding-top: 3.7rem;
+}
+
 /* @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body {
     font-size: 62.5%;
