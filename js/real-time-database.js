@@ -1,65 +1,50 @@
-
 // Initialize Firebase (ADD YOUR OWN DATA)
 var config = {
-    apiKey: "AIzaSyBUi05h6AW2ZjW0f2u1tGqrgUAg6yRLvLs",
-    authDomain: "show-me-the-leads-blog-87279.firebaseapp.com",
-    databaseURL: "https://show-me-the-leads-blog-87279.firebaseio.com",
-    projectId: "show-me-the-leads-blog-87279",
-    storageBucket: "show-me-the-leads-blog-87279.appspot.com",
-    messagingSenderId: "185684396743"
-  };
-  firebase.initializeApp(config);
+  apiKey: "AIzaSyBUi05h6AW2ZjW0f2u1tGqrgUAg6yRLvLs",
+  authDomain: "show-me-the-leads-blog-87279.firebaseapp.com",
+  databaseURL: "https://show-me-the-leads-blog-87279.firebaseio.com",
+  projectId: "show-me-the-leads-blog-87279",
+  storageBucket: "show-me-the-leads-blog-87279.appspot.com",
+  messagingSenderId: "185684396743"
+};
+firebase.initializeApp(config);
 
-  // Reference messages collection
-  var messagesRef = firebase.database().ref('messages');
+// Reference messages collection
+var messagesRef = firebase.database().ref('messages');
 
-  // Listen for form submit
-  document.getElementById('contactForm').addEventListener('submit', submitForm);
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
 
-  // Submit form
-  function submitForm(e){
-    e.preventDefault();
+// Submit form
+function submitForm(e) {
+  e.preventDefault();
 
-    var nomeInput = document.getElementById('nome').value;
-    var emailInput = document.getElementById('email').value;
-    var empresaInput = document.getElementById('empresa').value;
-   // var addButton = getElementById('addButton');
+  var nomeInput = document.getElementById('nome').value;
+  var emailInput = document.getElementById('email').value;
+  var empresaInput = document.getElementById('empresa').value;
+  var currentDate = new Date().toString();
+  var currentIp = getIp;
 
-    // Save message
-    saveMessage(nomeInput, emailInput, empresaInput);
+  // Save message
+  saveMessage(nomeInput, emailInput, empresaInput, currentDate, currentIp);
 
+  // Clear form
+  document.getElementById('contactForm').reset();
+}
 
+// Function to get get form values
+function getInputVal(id) {
+  return document.getElementById(id).value;
+}
 
-    //teste php
-    var teste = document.getElementById('ip').value;
-    console.log(teste);
-    //teste php
-
-
-
-    // Show alert
-    //document.querySelector('.alert').style.display = 'block';
-
-    // Hide alert after 3 seconds
-    //setTimeout(function(){
-   //   document.querySelector('.alert').style.display = 'none';
-   // },3000);
-
-    // Clear form
-    document.getElementById('contactForm').reset();
-  }
-
-  // Function to get get form values
-  function getInputVal(id){
-    return document.getElementById(id).value;
-  }
-
-  // Save message to firebase
-  function saveMessage(nomeInput,emailInput,empresaInput){
-    var newMessageRef = messagesRef.push();
-    newMessageRef.set({
-      nomeInput:nomeInput,
-      emailInput:emailInput,
-      empresaInput:empresaInput,
-    });
-  }
+// Save message to firebase
+function saveMessage(nomeInput, emailInput, empresaInput, currentDate, currentIp) {
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    nomeInput: nomeInput,
+    emailInput: emailInput,
+    empresaInput: empresaInput,
+    currentDate: currentDate,
+    currentIp: currentIp
+  });
+}
