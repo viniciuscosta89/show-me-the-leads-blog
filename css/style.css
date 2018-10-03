@@ -606,7 +606,7 @@ p {
   }
 
   .area-destaque--img {
-    /*align-self: flex-start; */
+    align-self: flex-start;
     max-width: calc(50% - 10px);
   }
 
@@ -660,4 +660,3 @@ padding-bottom: 2rem;
     margin: auto;
     padding-bottom: 2rem;
     }
-
