@@ -105,6 +105,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -422,6 +423,109 @@ p {
 }
 
 /* FIM FOOTER */
+
+/* ANIMANDO O LOGO EM SVG */
+
+.logo path,
+.logo rect {
+  fill: #fff;
+}
+
+.logo circle {
+  stroke-dasharray: 602; /* cria um traço do tamanho do path inteiro */
+  stroke-dashoffset: 602;
+  animation: fill-purple 5s ease-in-out forwards, draw 5s ease-in-out 1s forwards;
+}
+
+.logo polygon {
+  stroke-dasharray: 289; /* cria um traço do tamanho do path inteiro */
+  stroke-dashoffset: 289;
+  animation: fill-play 5s ease-in-out 2s forwards;
+}
+
+#text > path {
+  animation: fill-black 5s ease-in-out 1s forwards, draw 5s ease-in-out forwards;
+}
+
+#letra-m {
+  stroke-dasharray: 254; /* cria um traço do tamanho do path inteiro */
+  stroke-dashoffset: 254;
+}
+
+#letra-y {
+  stroke-dasharray: 123; /* cria um traço do tamanho do path inteiro */
+  stroke-dashoffset: 123;
+}
+
+.letra-l {
+  stroke-dasharray: 154; /* cria um traço do tamanho do path inteiro */
+  stroke-dashoffset: 154;
+}
+
+.letra-i {
+  stroke-dasharray: 113; /* cria um traço do tamanho do path inteiro */
+  stroke-dashoffset: 113;
+}
+
+#letra-v {
+  stroke-dasharray: 208; /* cria um traço do tamanho do path inteiro */
+  stroke-dashoffset: 208;
+}
+
+.letra-e {
+  stroke-dasharray: 252; /* cria um traço do tamanho do path inteiro */
+  stroke-dashoffset: 252;
+}
+
+#letra-o {
+  stroke-dasharray: 278; /* cria um traço do tamanho do path inteiro */
+  stroke-dashoffset: 278;
+}
+
+.letra-n {
+  stroke-dasharray: 296; /* cria um traço do tamanho do path inteiro */
+  stroke-dashoffset: 296;
+}
+
+.logo rect {
+  animation: fill-play 5s ease-in-out 1s forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-purple {
+  from {
+    fill: #fff;
+  }
+
+  to {
+    fill: #6a4993;
+  }
+}
+
+@keyframes fill-black {
+  from {
+    fill: #fff;
+  }
+
+  to {
+    fill: #222220;
+  }
+}
+
+@keyframes fill-play {
+  from {
+    fill: #fff;
+  }
+
+  to {
+    fill: #181713;
+  }
+}
 
 /* MEDIA QUERY */
 
