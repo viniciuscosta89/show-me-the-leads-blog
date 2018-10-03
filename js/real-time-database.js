@@ -12,6 +12,8 @@ firebase.initializeApp(config);
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
 
+var planilha = "http://myliveonline.com.br/ROI.xlsx";
+
 // Listen for form submit
 document.getElementById('contactForm').addEventListener('submit', submitForm);
 
@@ -30,6 +32,7 @@ function submitForm(e) {
 
   // Clear form
   document.getElementById('contactForm').reset();
+  window.open(planilha,'Download');
 
 }
 
