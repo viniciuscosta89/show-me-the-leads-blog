@@ -198,6 +198,7 @@ p {
 
 .highlight-post h2 {
   color: #000;
+  margin-bottom: 1.5rem;
 }
 
 .highlight-post .metadata {
@@ -621,7 +622,7 @@ p {
   }
 
   .titulo {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 
   .area-destaque {

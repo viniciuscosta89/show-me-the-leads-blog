@@ -30,6 +30,7 @@ function submitForm(e) {
 
   // Clear form
   document.getElementById('contactForm').reset();
+
 }
 
 // Function to get get form values
@@ -49,6 +50,6 @@ function saveMessage(nomeInput, emailInput, empresaInput, currentDate, currentIp
   });
 }
 
-function myFunction() {
+function dadosCadastrados() {
   confirm("Seus dados foram cadastrados !");
 }
