@@ -48,3 +48,7 @@ function saveMessage(nomeInput, emailInput, empresaInput, currentDate, currentIp
     currentIp: currentIp
   });
 }
+
+function myFunction() {
+  confirm("Seus dados foram cadastrados !");
+}

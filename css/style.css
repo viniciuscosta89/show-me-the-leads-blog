@@ -610,6 +610,12 @@ p {
     max-width: calc(50% - 10px);
   }
 
+  .area-destaque--img-teste{
+    max-width: calc(50% - 10px);
+    max-height: calc(10% - 5px);
+    
+  }
+
   .footer--social > a:hover {
     background-color: #8a00e2;
   }
