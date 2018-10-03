@@ -139,14 +139,39 @@
     <script src="js/real-time-database.js"></script>
 
     <script>
-    $.fn.getFormData = function() {
-      var fields = this.find('[name]');
-      var result = {};
-      $.each(fields, function(i, el) {
-        result[el.name] = el.value;
+      $.fn.getFormData = function() {
+        var fields = this.find('[name]');
+        var result = {};
+        $.each(fields, function(i, el) {
+          result[el.name] = el.value;
+        });
+        return result;
+      };
+
+      // var wrap = $("body");
+      // var formLateral = $(".form-lateral");
+      //
+      // wrap.on("scroll", function(e) {
+      //
+      //   if (wrap.scrollTop > 350) {
+      //     formLateral.addClass("is-fixed");
+      //   } else {
+      //     formLateral.removeClass("is-fixed");
+      //   }
+      // });
+
+      $(function($) {
+        function fixDiv() {
+          var $cache = $('.form-lateral');
+          if ($(window).scrollTop() > 700) {
+            $cache.addClass("is-fixed");
+          } else {
+            $cache.removeClass("is-fixed");
+          }
+        }
+        $(window).scroll(fixDiv);
+        fixDiv();
       });
-      return result;
-    };
     </script>
 
   </body>

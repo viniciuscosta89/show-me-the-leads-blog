@@ -224,6 +224,10 @@ p {
 
 /* FORM */
 
+.form-lateral {
+  transition: transform 0.5s ease-in-out;
+}
+
 .form-lateral--header {
   background-color: #8a00e2;
   color: #fff;
@@ -673,6 +677,39 @@ p {
 
   .post h3 {
     min-height: 8rem;
+  }
+}
+
+@media (min-width: 1921px) {
+  .form-lateral.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 60%;
+    max-width: 360px;
+    transform: translateY(25%);
+    box-shadow: 0 8px 12px -5px rgba(0,0,0,0.5);
+  }
+}
+
+@media (min-width: 1680px) and (max-width: 1920px) {
+  .form-lateral.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 65%;
+    max-width: 360px;
+    transform: translateY(25%);
+    box-shadow: 0 8px 12px -5px rgba(0,0,0,0.5);
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1679px) {
+  .form-lateral.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 70%;
+    max-width: 360px;
+    transform: translateY(25%);
+    box-shadow: 0 8px 12px -5px rgba(0,0,0,0.5);
   }
 }
 
