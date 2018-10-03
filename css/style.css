@@ -520,3 +520,34 @@ p {
     font-size: 62.5%;
   }
 } */
+
+.h3-main{
+  text-align: center;
+}
+
+.p-1 {
+  text-align: justify;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.img-11 {
+height: 40rem;
+margin: auto;
+padding-bottom: 2rem;
+}
+
+.img-22 {
+  height: 25rem;
+  width: 50rem;
+  margin: auto;
+  padding-bottom: 2rem;
+  }
+
+  .img-33 {
+    height: 25rem;
+    width: 40rem;
+    margin: auto;
+    padding-bottom: 2rem;
+    }
+
