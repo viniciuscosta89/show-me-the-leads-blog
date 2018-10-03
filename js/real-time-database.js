@@ -28,6 +28,15 @@ var config = {
     // Save message
     saveMessage(nomeInput, emailInput, empresaInput);
 
+
+
+    //teste php
+    var teste = document.getElementById('ip').value;
+    console.log(teste);
+    //teste php
+
+
+
     // Show alert
     //document.querySelector('.alert').style.display = 'block';
 

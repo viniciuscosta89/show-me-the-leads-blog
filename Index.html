@@ -72,6 +72,17 @@
                   <label for="empresa">Empresa*</label>
                   <input id="empresa" type="text" class="contat-form--input" name="empresa" placeholder="Empresa" />
                 </fieldset>
+
+
+              
+                <!--Teste php-->
+                <fieldset>
+                  <label id="ip" type="text" name="ip" value="<?php echo $_SERVER['REMOTE_ADDR']; ?>">
+                  <label id="data" type="text" name="data" value="<?php echo date('d/m/Y'); ?>">
+                  <label id="hora" type="text" name="hora" value="<?php echo date('H:i:s'); ?>">
+                </fieldset>
+                <!--Teste php-->      
+
                 <button type="submit" class="contact-form--button">Receber material</button>
               </form>
             </div>
