@@ -5,6 +5,13 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126822233-1"></script>
     <script src="js/analytics.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyLiveOnline</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <!-- Facebook Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s)
@@ -24,14 +31,6 @@
       &noscript=1"/>
     </noscript>
     <!-- End Facebook Pixel Code -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MyLiveOnline</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-
     <script language="javascript" type="text/javascript" src="js/get-ip.php"></script>
   </head>
 
@@ -224,7 +223,6 @@
     </footer>
 
     <!--Scripts-->
-
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
@@ -236,17 +234,15 @@
     <!-- <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-messaging.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-functions.js"></script>    -->
     <script src="js/real-time-database.js"></script>
-
     <script>
-    $.fn.getFormData = function() {
-      var fields = this.find('[name]');
-      var result = {};
-      $.each(fields, function(i, el) {
-        result[el.name] = el.value;
-      });
-      return result;
-    };
+      $.fn.getFormData = function() {
+        var fields = this.find('[name]');
+        var result = {};
+        $.each(fields, function(i, el) {
+          result[el.name] = el.value;
+        });
+        return result;
+      };
     </script>
-
   </body>
 </html>
