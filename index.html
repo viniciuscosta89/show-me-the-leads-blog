@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <meta name="theme-color" content="#8a00e2">
     <!-- Facebook Pixel Code -->
     <script>
       !function(f,b,e,v,n,t,s)
@@ -84,7 +85,7 @@
       <div class="container">
         <section class="main-content">
           <div class="col-3">
-            <img src="img/img-planilha_300x300.png" alt="Imagem do post">
+            <a class="planilha-roi" href="#form-lateral"><img src="img/img-planilha_300x300.png" alt="Imagem do post"></a>
           </div>
           <div class="col-3">
             <div class="highlight-post">
@@ -100,7 +101,7 @@
             </div>
           </div>
           <div class="col-3">
-            <div class="form-lateral">
+            <div id="form-lateral" class="form-lateral">
               <div class="form-lateral--header">
                 <h4>Preencha os campos abaixo para obter gratuitamente o material</h4>
               </div>
@@ -243,6 +244,31 @@
         });
         return result;
       };
+
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (1000) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 1000, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
     </script>
   </body>
 </html>

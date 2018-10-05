@@ -5,46 +5,31 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126822233-1"></script>
     <script src="js/analytics.js"></script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aprenda como calcular o ROI dos seus vídeos com a calculadora My Live Online | MyLiveOnline</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <meta name="theme-color" content="#8a00e2">
 
     <!-- Facebook Pixel Code -->
     <script>
-
-              !function(f,b,e,v,n,t,s)
-              
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              
-              s.parentNode.insertBefore(t,s)}(window,document,'script',
-              
-              'https://connect.facebook.net/en_US/fbevents.js');
-              
-              
-              fbq('init', '306272146853650'); 
-              
-              fbq('track', 'PageView');
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '306272146853650');
+      fbq('track', 'PageView');
     </script>
     <noscript>
-              
-              <img height="1" width="1" 
-              
-              src="https://www.facebook.com/tr?id=306272146853650&ev=PageView
-              
-              &noscript=1"/>
-              
+      <img height="1" width="1"
+      src="https://www.facebook.com/tr?id=306272146853650&ev=PageView
+      &noscript=1"/>
     </noscript>
     <!-- End Facebook Pixel Code -->
 
@@ -103,11 +88,11 @@
         <div class="area-destaque">
           <div class="area-destaque--content">
             <h1 class="titulo">Aprenda como calcular o ROI dos seus vídeos com a calculadora My Live Online</h1>
-            <img class="" src="img/img-planilha_853x479.png"
-              alt="Descrição da imagem">
+            <a class="planilha-roi" href="#form-lateral"><img class="" src="img/img-planilha_853x479.png"
+              alt="Descrição da imagem"></a>
           </div>
 
-          <div class="form-lateral">
+          <div id="form-lateral" class="form-lateral">
             <div class="form-lateral--header">
               <h4>Preencha os campos abaixo para obter gratuitamente o material</h4>
             </div>
@@ -210,6 +195,31 @@
         }
         $(window).scroll(fixDiv);
         fixDiv();
+      });
+
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (1000) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 1000, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
       });
     </script>
 

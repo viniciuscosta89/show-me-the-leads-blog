@@ -598,6 +598,11 @@ p {
     justify-content: space-between;
   }
 
+  .planilha-roi {
+    cursor: default;
+    pointer-events: none;
+  }
+
   .posts {
     justify-content: space-between;
     align-items: normal;
